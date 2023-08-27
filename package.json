@@ -1,0 +1,29 @@
+{
+    "name": "dac5771",
+    "version": "0.0.9",
+    "description": "Module to controle the DAC5771",
+    "main": "i2c-dac5771.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/JW94/DAC6573.git"
+    },
+    "keywords": [
+      "dac5771"
+    ],
+    "author": "Dmytro Maiurnikov <mayurnikov@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/dukenukke/i2c-dac5571/issues"
+    },
+    "homepage": "https://github.com/dukenukke/i2c-dac5571/blob/main/README.md",
+    "dependencies": {
+      "i2c": ">= 0.2.3"
+    },
+    "engines": {
+    "node": ">=18.7.0"
+    }
+  }
+  
