@@ -14,7 +14,7 @@
       "dac5771"
     ],
     "author": "Dmytro Maiurnikov <mayurnikov@gmail.com>",
-    "license": "MIT",
+    "license": "ISC",
     "bugs": {
       "url": "https://github.com/dukenukke/i2c-dac5571/issues"
     },
