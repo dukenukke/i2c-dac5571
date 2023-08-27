@@ -1,6 +1,6 @@
 {
     "name": "dac5771",
-    "version": "0.0.9",
+    "version": "1.0.0",
     "description": "Module to controle the DAC5771",
     "main": "index.js",
     "scripts": {
