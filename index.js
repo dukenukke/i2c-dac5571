@@ -12,19 +12,20 @@ var RES = 8;                                   //resolution
 var RES_STEPS = Math.pow(2,RES);               //
 var DACVALUE_FACT = (RES_STEPS-1)/REF_VOLTAGE;
 
+class dac5771{
+    /**
+    * Constructor
+    *
+    * @param  {string} device
+    * @param  {number} address
+    */
 
- /**
- * Constructor
- *
- * @param  {string} device
- * @param  {number} address
- */
-
-var dac5771 = function(device, address) 
-{
-    this.device = device;
-    this.address = address;
-    this.wire = new i2c(this.address,{device: this.device});
+    constructor(device, address) 
+    {
+        this.device = device;
+        this.address = address;
+        this.wire = new i2c(this.address,{device: this.device});
+    }
 }
 
 /**
@@ -33,7 +34,7 @@ var dac5771 = function(device, address)
  * @param  {number} value
  */
 
-dac5771.prototype.setDACRaw = function(value, callback)
+dac5771.setDACRaw = function(value, callback)
 {
     var self = this;
     var byte0 = (value << 4) & 0xF0;                           //Most
@@ -62,7 +63,7 @@ dac5771.prototype.setDACRaw = function(value, callback)
  */
 
 
-dac5771.prototype.setDACVoltage = function(voltage, callback)
+dac5771.setDACVoltage = function(voltage, callback)
 {
     var self = this;
     var dacValue = DACVALUE_FACT * voltage;
