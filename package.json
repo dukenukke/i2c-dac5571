@@ -2,13 +2,13 @@
     "name": "dac5771",
     "version": "0.0.9",
     "description": "Module to controle the DAC5771",
-    "main": "i2c-dac5771.js",
+    "main": "index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/JW94/DAC6573.git"
+      "url": "git+https://github.com/dukenukke/i2c-dac5571.git"
     },
     "keywords": [
       "dac5771"
